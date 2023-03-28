@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserindo Efeitos</title>
+    <style type="text/css">
+        ul {
+            list-style: none;
+            padding: 0px;
+        }
+        li {
+            float: left;
+            margin-left: 10px;
+            position: relative;
+        }
+        li:nth-child(even) {
+            transform: rotate(180deg);
+        }
+        li:nth-child(odd) {
+            transform: rotate(-180deg);
+        }
+        li:hover {
+            transform: scale(1.6);
+            z-index: 1;
+            transition: transform 0.2s ease 0s;
+        }
+
+        span {
+            color: brown;
+            display: block;
+            font-weight: bold;   
+            margin-top: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Principais Clubes da Europa</h1>
+    <ul>
+        <li>
+            <img src="imagens/barcelona.png" alt="Barcelona">
+            <span>Barcelona</span>
+        </li>
+        <li>
+            <img src="imagens/munited.png" alt="Munited">
+            <span>Manchester United</span>
+        </li>
+        <li>
+            <img src="imagens/psg.png" alt="PSG">
+            <span>PSG</span>
+        </li>
+        <li>
+            <img src="imagens/realm.png" alt="Realm">
+            <span>Real Madrid</span>
+        </li>
+    </ul>
+</body>
+</html>
